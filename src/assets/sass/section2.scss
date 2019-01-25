@@ -1,0 +1,101 @@
+@import "variables.scss";
+
+.redsoft-remsmed {
+  position: relative;
+  background: url(../images/pulse.png) no-repeat;
+  background-position: 95% bottom;
+  padding-bottom: 150px;
+}
+
+.redsoft-remsmed__content {
+  position: relative;
+  margin-top: 150px;
+  display: flex;
+  justify-content: center;
+}
+
+.redsoft-remsmed__pict {
+  position: relative;
+  margin-right: 25px;
+}
+
+.redsoft-remsmed__journal {
+  position: relative;
+  margin-left: 25px;
+  margin-top: 75px;
+}
+
+.redsoft-remsmed__heading {
+  position: relative;
+  font-family: $font-medium;
+  color: $color-content;
+  font-weight: 100;
+  font-size: 36px;
+  line-height: 1.5;
+}
+
+.redsoft-remsmed__text {
+  margin-top: 18px;
+  font-family: $font-medium;
+  color: $color-content;
+  font-weight: 100;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.redsoft-remsmed__list {
+  position: relative;
+  left: -15px;
+  max-width: 490px;
+  margin-top: 20px;
+  color: $color-content;
+  font-weight: 100;
+  font-size: 16px;
+  list-style: none;
+}
+
+.redsoft-remsmed__item {
+  position: relative;
+  line-height: 1.6;
+}
+
+.redsoft-remsmed__item:before {
+  content: "\2022";
+  position: absolute;
+  color: $color-blue;
+  font-weight: 700;
+  font-size: 18px;
+  top: -4px;
+  left: -17px;
+}
+
+.redsoft-remsmed__button {
+  position: relative;
+  margin-top: 42px;
+  button {
+    background-color: $color-pink;
+    border: 0;
+    width: 180px;
+    height: 60px;
+    line-height: 55px;
+    font-size: 16px;
+    font-family: $font-bold;
+    border-radius: 40px;
+    &:hover {
+      background-color: $color-pink-hover;
+    }
+  }
+}
+
+.redsoft-remsmed__pulse {
+  position: relative;
+  top: 82%;
+}
+
+.redsoft-header__canvas5, .redsoft-header__canvas6 {
+  position: absolute;
+  left: 0;
+  top: -155px;
+  opacity: .2;
+  z-index: -1;
+}

@@ -1,0 +1,30 @@
+@font-face {
+  font-family: 'CeraRoundPro-Medium';
+  src: url(../fonts/CeraRoundPro-Medium.otf);
+}
+
+@font-face {
+  font-family: 'Geometria-Medium';
+  src: url(../fonts/Geometria-Medium.otf);
+}
+
+@font-face {
+  font-family: 'CeraRoundPro-Bold';
+  font-weight: 600;
+  src: url(../fonts/CeraRoundPro-Bold.otf);
+}
+
+$font-medium: 'CeraRoundPro-Medium';
+$font-bold: 'CeraRoundPro-Bold';
+$font-geometria-medium: 'Geometria-Medium';
+
+$primary-color: #ffffff;
+$header-cover: #0e72b7;
+$color-content: #60759d;
+$color-pink: #e70067;
+$color-pink-hover: #c9005a;
+$color-button-header: #5489c3;
+$stroke-wave: #4c72a9;
+$color-blue: #16afe0;
+
+

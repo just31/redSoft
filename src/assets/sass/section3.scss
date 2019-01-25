@@ -1,0 +1,65 @@
+@import "variables.scss";
+
+.redsoft-function {
+  position: relative;
+  margin-top: -42px;
+  background-color: #f1f4fc;
+  border-radius: 40% 40% 0 0 / 7% 7% 0 0;
+}
+
+.redsoft-function__content {
+  position: relative;
+  padding-top: 140px;
+  padding-bottom: 140px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.redsoft-function__heading {
+  position: relative;
+  margin-bottom: -20px;
+  font-family: $font-medium;
+  color: $color-content;
+  font-weight: 100;
+  font-size: 36px;
+  line-height: 1.5;
+}
+
+.redsoft-function__icons {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  max-width: 970px;
+}
+
+.redsoft-function__item {
+  max-width: 220px;
+  margin: 0 50px;
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.redsoft-function__item-pict {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  width: 70px;
+  border: 1px rgba(84, 137, 195, 0.2) solid;
+  border-radius: 100px;
+  img {
+    position: relative;
+  }
+}
+
+.redsoft-function__item-text {
+  margin-top: 20px;
+  color: $color-content;
+  font-weight: 100;
+  font-size: 15px;
+  text-align: center;
+  line-height: 1.5;
+}
