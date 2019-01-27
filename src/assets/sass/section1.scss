@@ -92,6 +92,10 @@
   overflow: hidden;
   max-height: 750px;
   border-radius: 0 0 40% 40% / 0 0 7% 7%;
+  img:nth-of-type(2) {
+    object-fit: cover;
+    height: max-content;
+  }
 }
 
 .redsoft-header__slider-content {
@@ -105,6 +109,7 @@
   width: 100%;
   animation-duration: 16s;
   animation-iteration-count: infinite;
+  animation-timing-function: linear;
   z-index: 1;
 }
 
@@ -164,7 +169,7 @@
   text-align: center;
   width: 100%;
   z-index: -1;
-  animation-duration: 11s;
+  animation-duration: 14s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
@@ -197,6 +202,10 @@
 
 @keyframes fadeIm-1 {
   from {
+    opacity: 0;
+  }
+
+  5% {
     opacity: 1;
   }
 
@@ -226,8 +235,12 @@
     opacity: 1;
   }
 
-  to {
+  90% {
     opacity: 1;
+  }
+
+  to {
+    opacity: 0;
   }
 }
 
@@ -266,11 +279,43 @@
 
   input {
     &:checked + label:before {
-      color: $primary-color;
+      //color: $primary-color;
     }
     &:disabled + label:before {
       color: $color-button-header;
     }
+  }
+}
+
+.redsoft-header__controls-span_active1 {
+  animation-name: active-item1;
+}
+
+.redsoft-header__controls-span_active2 {
+  animation-name: active-item2;
+}
+
+@keyframes active-item1 {
+  from {
+    color: $primary-color;
+  }
+  50% {
+    color: $primary-color;
+  }
+  to {
+    color: $color-button-header;
+  }
+}
+
+@keyframes active-item2 {
+  from {
+    color: $color-button-header;
+  }
+  50% {
+    color: $color-button-header;
+  }
+  to {
+    color: $primary-color;
   }
 }
 
